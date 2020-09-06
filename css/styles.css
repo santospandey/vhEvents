@@ -37,19 +37,48 @@
     display: flex;
     padding: 15px;
     justify-content: center;
+    align-items: center;    
+}
+
+.dots-container{
+    flex: 1;
+}
+
+.num-container{
+    flex: 1;
 }
 
 .slider img {
-    width: 20px;
+    width: 18px;
     cursor: pointer;
-    margin: 0 5px;
-    /* border-radius: 50%; */
+    margin: 0 5px;    
 }
 
-.slider img:first-child, .slider img:last-child{
-    border-radius: none;
+.modal-header>button{
+    outline: none;
+    border: none;    
 }
 
-.slider img:first-child{
-    /* background: #000; */
+.modal-header>button>span{
+    font-size: 20px;
+}
+
+.details-desc::before{
+    content: "*";
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-right: 5px;
+    color: #111;
+}
+
+.details-desc{    
+    padding: 4px 4px 4px 12px;
+    display: flex;
+    align-items: center;
+}
+
+.modal-content{
+    background-image: url('../assets/images/rose.jpg');
+    background-repeat: no-repeat;    
 }
