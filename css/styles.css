@@ -78,7 +78,20 @@
     align-items: center;
 }
 
-.modal-content{
-    background-image: url('../assets/images/rose.jpg');
-    background-repeat: no-repeat;    
+.modal-content{    
+    max-height: 95vh;
+    overflow-y: scroll;
+}
+
+.modal-footer{
+    display: flex;
+    position: sticky;
+    bottom: 0;    
+    background: #fff;
+    border-top: none;
+    box-shadow: 1px 1px 4px #222;
+}
+
+.modal-footer>button{
+    margin: 0 10px;
 }
