@@ -7,7 +7,7 @@ class Event{
     
     getEventDom(){
         const containerDom = this.getContainerDom()
-
+        
         const imgDom = this.getImgDom()
         const imgFrameDom = this.getImgFrameDom()
         imgFrameDom.appendChild(imgDom)
@@ -66,7 +66,7 @@ class Event{
     }
 
     getImgDom(){
-        const imgSrc = './assets/images/pic3.jpg'
+        const imgSrc = this.event.img
         const imgStyle = {
             'width': '100%',
             'borderTopLeftRadius': '10px',
@@ -168,7 +168,7 @@ class Event{
             }
             if(obj.hasOwnProperty('text')){
                 const textDom = new DomElement('p', {'class': 'details-desc'})                
-                textDom.insertText(obj.text)                
+                textDom.insertText(obj.text)
                 DomElement.appendChild(details, textDom)                
             }
             if(obj.hasOwnProperty('content')){
