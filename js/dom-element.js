@@ -1,3 +1,4 @@
+"use strict"
 class DomElement{
     constructor(tagName, attributes, styles){
         this.element = document.createElement(tagName)

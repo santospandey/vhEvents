@@ -1,3 +1,4 @@
+"use strict"
 import DomElement from "../js/dom-element.js"
 
 class Event{
